@@ -1,0 +1,71 @@
+{
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "jsx": "preserve",
+    "allowSyntheticDefaultImports": true,
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment",
+    "paths": {
+      "#imports": [
+        "./types/nitro-imports"
+      ],
+      "#paths": [
+        "../node_modules/nuxt/dist/core/runtime/nitro/paths"
+      ],
+      "~": [
+        "../apps/app_front"
+      ],
+      "~/*": [
+        "../apps/app_front/*"
+      ],
+      "@": [
+        "../apps/app_front"
+      ],
+      "@/*": [
+        "../apps/app_front/*"
+      ],
+      "~~": [
+        "./.."
+      ],
+      "~~/*": [
+        "../*"
+      ],
+      "@@": [
+        "./.."
+      ],
+      "@@/*": [
+        "../*"
+      ],
+      "assets": [
+        "../apps/app_front/assets"
+      ],
+      "public": [
+        "../apps/app_front/public"
+      ],
+      "public/*": [
+        "../apps/app_front/public/*"
+      ]
+    }
+  },
+  "include": [
+    "./types/nitro-nuxt.d.ts",
+    "../node_modules/@element-plus/nuxt/runtime/server",
+    "../node_modules/@nuxt/devtools/runtime/server",
+    "../node_modules/@nuxt/telemetry/runtime/server",
+    "./types/nitro.d.ts",
+    "../**/*",
+    "../apps/app_front/server/**/*"
+  ],
+  "exclude": [
+    "../node_modules",
+    "../apps/app_front/node_modules",
+    "../node_modules/nuxt/node_modules",
+    "../dist"
+  ]
+}
